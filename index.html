@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Copy - No Borders</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .state-link {
+            color: #0066cc;
+            cursor: pointer;
+            display: block;
+            margin-bottom: 5px;
+            width: fit-content;
+            user-select: none;
+        }
+        .state-link:hover {
+            text-decoration: underline;
+        }
+        .state-link:active {
+            color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+    <span class="state-link" onclick="cp('Alaska')">Alaska</span>
+    <span class="state-link" onclick="cp('Hawaii')">Hawaii</span>
+    <span class="state-link" onclick="cp('California')">California</span>
+    <span class="state-link" onclick="cp('Washington')">Washington</span>
+    <span class="state-link" onclick="cp('Colorado')">Colorado</span>
+    <span class="state-link" onclick="cp('North Dakota')">North Dakota</span>
+    <span class="state-link" onclick="cp('Texas')">Texas</span>
+    <span class="state-link" onclick="cp('Minnesota')">Minnesota</span>
+    <span class="state-link" onclick="cp('Arkansas')">Arkansas</span>
+    <span class="state-link" onclick="cp('Indiana')">Indiana</span>
+    <span class="state-link" onclick="cp('Georgia')">Georgia</span>
+    <span class="state-link" onclick="cp('Virginia')">Virginia</span>
+    <span class="state-link" onclick="cp('Pennsylvania')">Pennsylvania</span>
+    <span class="state-link" onclick="cp('New York')">New York</span>
+    <span class="state-link" onclick="cp('Maine')">Maine</span>
+ <span class="state-link" onclick="cp('Rhode Island')">Rhode Island</span>
+    <script>
+        function cp(text) {
+            navigator.clipboard.writeText(text);
+        }
+    </script>
+
+</body>
+</html>
