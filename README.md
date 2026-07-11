@@ -20,7 +20,6 @@ The app lists all the required states in a perfectly sorted layout, allowing you
 ## Technologies
 
 - HTML5
-- CSS3 (embedded for the split-view layout)
 
 ## License
 
